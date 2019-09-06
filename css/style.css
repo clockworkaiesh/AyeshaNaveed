@@ -1,0 +1,448 @@
+/* import compass */
+@import "compass";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap');
+/* COLORS */
+:root {
+  --blackish: #212121;
+  --blue-one: #3f51b5;
+  --blue-two: #303f9f;
+  --purple-one: #7c4dff;
+  --purple-two: #c5cae9;
+  --font-light: #d5d7e8;
+  --font-gray: #7a7a7a;
+}
+html{
+   scroll-behavior: smooth;
+}
+header,
+section{
+  overflow-x: hidden; /*hides all the extra space from left and right*/
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+/* CUSTOM BUTTONS */
+.btn-view{
+  background-image: linear-gradient(to top, #3f51b5, #3b4cad, #3848a5, #34439d, #303f95);
+  color: whitesmoke;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+}
+.btn-view:hover{
+  background-image: linear-gradient(to right top, #3f51b5, #3f4796, #3b3e79, #36355d, #2e2c42, #2d2b41, #2b293f, #2a283e, #2f2e55, #32336d, #323985, #303f9f);
+  color: whitesmoke;
+}
+.custom-btn{
+  width: 300px;
+}
+.custom-btn:hover{
+  color: #212121 !important;
+}
+/* --- CUSTOM BUTTONS */
+
+
+
+/* HEADER */
+.dark-bg{
+  background: var(--blackish);
+}
+header{
+  color: #fff;
+}
+header .row .col-md-7{
+  padding-top: 22vmin;
+}
+header .banner > div > h1{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 3.2em;
+}
+header .banner > div > p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+a.nav-link{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px
+}
+/* VIDEO MODAL */
+.modal-dialog {
+  max-width: 1024px;
+  margin: 30px auto;
+  }
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+/* VIDEO MODAL ENDS */
+/* --- HEADER */
+
+
+
+/* ABOUT SECTION STYLES */
+i.blue-icon{
+  color: var(--blue-one);
+  font-size: 1.5em;
+}
+
+.about-me h4, .follow-me h4, .inquisitiveness h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 50px;
+}
+a.custom-link{
+  color: var(--blue-two);
+  font-weight: 600;
+}
+.section-1 p{
+  color: var(--font-gray);
+  font-size: 16px;
+  line-height: 25px;
+}
+.section-1 ul li{
+    color: var(--font-gray);
+    font-size: 16px;
+    line-height: 21px;
+}
+.btn-resume{
+  background-image: linear-gradient(to top, #3f51b5, #3b4cad, #3848a5, #34439d, #303f95);
+  color: whitesmoke;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 4px;
+  width: 120px;
+}
+.btn-resume:hover{
+  background-image: linear-gradient(to right top, #3f51b5, #3f4796, #3b3e79, #36355d, #2e2c42, #2d2b41, #2b293f, #2a283e, #2f2e55, #32336d, #323985, #303f9f);
+  color: whitesmoke;
+}
+/* --- ABOUT SECTION STYLES */
+
+
+/* SKILL SECTION STYLES */
+.skill > p::before{
+  font-family: FontAwesome;
+  content: '';
+  color: #3f51b5;
+  font-weight: 100;
+  padding-right:8px;
+}
+.section-2 p{
+    color: var(--font-light);
+    word-spacing: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+.section-2 .skills{
+  color: #fff !important;
+}
+.section-2 h2{
+  color: #fff;
+}
+/* --- SKILL SECTION STYLES */
+
+
+/* PORTFOLIO SECTION STYLES */
+.section-3, .section-6{
+  background-image: linear-gradient(to right top, #303f9f, #3342a3, #3645a7, #3849ab, #3b4caf, #3c49a4, #3d4798, #3d448d, #393b70, #333254, #2b293a, #212121);
+  /* background: var(--blue-two); */
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+/* IMAGE HOVER EFFECTS FOR PORTFOLIO SECTION */
+@charset "UTF-8";
+/*!
+ * ImageHover.css - http://www.imagehover.io
+ * Version 1.0
+ * Author: Ciarán Walsh
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ */
+ [class*=" imghvr-"],
+ [class^=imghvr-]{
+ position:relative;
+ display:inline-block;
+ margin:0;
+ max-width:100%;
+ background-color:#212121 !important;
+ color:#fff;
+ overflow:hidden;
+ -webkit-backface-visibility:hidden;
+ backface-visibility:hidden;
+ -moz-osx-font-smoothing:grayscale;
+ transform:translateZ(0);
+ }
+ [class*=" imghvr-"]>img,
+ [class^=imghvr-]>img{
+   vertical-align:top;
+   max-width:100%;
+ }
+ [class*=" imghvr-"] figcaption,
+ [class^=imghvr-] figcaption{
+   background-color:#212121 !important;
+   padding:30px;
+   position:absolute;
+   top:30%;
+   bottom:0;
+   left:0;
+   right:0;
+   color:#fff;
+   font-size: 16px;
+ }
+ [class*=" imghvr-"] figcaption h1,
+ [class*=" imghvr-"] figcaption h2,
+ [class*=" imghvr-"] figcaption h3,
+ [class*=" imghvr-"] figcaption h4,
+ [class*=" imghvr-"] figcaption h5,
+ [class*=" imghvr-"] figcaption h6,
+ [class^=imghvr-] figcaption h1,
+ [class^=imghvr-] figcaption h2,
+ [class^=imghvr-] figcaption h3,
+ [class^=imghvr-] figcaption h4,
+ [class^=imghvr-] figcaption h5,
+ [class^=imghvr-] figcaption h6{color:#fff}
+ [class*=" imghvr-"] a,
+ [class^=imghvr-] a{
+   position:absolute;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+   z-index:1;
+   }
+ [class*=" imghvr-"],
+ [class*=" imghvr-"] *,
+ [class*=" imghvr-"]:after,
+ [class*=" imghvr-"] :after,
+ [class*=" imghvr-"]:before,
+ [class*=" imghvr-"] :before,
+ [class^=imghvr-],[class^=imghvr-] *,
+ [class^=imghvr-]:after,
+ [class^=imghvr-] :after,
+ [class^=imghvr-]:before,
+ [class^=imghvr-] :before{
+   box-sizing:border-box;
+   transition:all .35s ease;
+   }
+ .imghvr-flip-diag-2:hover>img{
+   transform:rotate3d(-1,-1,0,100deg);
+ }
+ [class*=" imghvr-shutter-out-"]:before,
+ [class^=imghvr-shutter-out-]:before{
+   background:#212121 !important;
+   position:absolute;
+   content:"";
+   transition-delay:.105s;
+ }
+ [class*=" imghvr-shutter-out-"] figcaption,
+ [class^=imghvr-shutter-out-] figcaption{
+   opacity:0;
+   transition-delay:0s;
+ }
+ [class*=" imghvr-shutter-out-"]:hover:before,
+ [class^=imghvr-shutter-out-]:hover:before{
+   transition-delay:0s;
+ }
+ [class*=" imghvr-shutter-out-"]:hover figcaption,
+ [class^=imghvr-shutter-out-]:hover figcaption{
+   opacity:1;transition-delay:.105s;
+ }
+ .imghvr-shutter-out-horiz:before{
+   left:50%;
+   right:50%;
+   top:0;
+   bottom:0;
+ }
+ .imghvr-shutter-out-horiz:hover:before{
+   left:0;
+   right:0;
+ }
+ .imghvr-shutter-out-vert:before{
+   top:50%;
+   bottom:50%;
+   left:0;
+   right:0;
+ }
+ .imghvr-shutter-out-vert:hover:before{
+   top:0;
+   bottom:0;
+ }
+
+/* END OF IMAGE HOVER  */
+/* --- PORTFOLIO SECTION STYLES */
+
+
+/* EDUCATION SECTION STYLES */
+.section-4 h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  word-spacing: 10px;
+  color: var(--blue-two);
+}
+.section-4 p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  color: var(--font-gray);
+  word-spacing: 4px;
+}
+p.font-black{
+  color: var(--blackish);
+}
+.section-4 a{
+  text-decoration: none;
+  color: var(--blackish);
+}
+.section-4 a:not(:last-child):after{
+  content: '|';
+  color: var(--blue-one);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+/* --- EDUCATION SECTION STYLES */
+
+
+/* EXPERIENCE SECTION STYLES */
+.section-5{
+  background-image: linear-gradient(to top, #c5cae9, #d5d7ee, #e4e4f4, #f2f1f9, #ffffff);
+  /* background: var(--purple-two); */
+  color: var(--blackish);
+}
+.section-5 h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  word-spacing: 10px;
+  color: var(--blackish);
+}
+.section-5 p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  color: var(--blackish);
+  word-spacing: 4px;
+}
+.section-5 h4 span{
+  color: var(--blue-one);
+  font-size: 22px;
+  word-spacing: normal;
+}
+/* --- EXPERIENCE SECTION STYLES */
+
+
+/* CONTACT SECTION STYLES */
+.section-6 > a:not([href]):not([tabindex]):hover{
+  color: #212121 !important;
+}
+.section-6 p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+}
+/* --- CONTACT SECTION STYLES */
+
+
+/* FOOTER STYLES */
+footer{
+  background: var(--blackish);
+  color: #fff;
+  overflow-x: hidden;
+}
+/* --- FOOTER STYLES */
+
+
+
+
+
+
+
+/* Extra small devices  (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .w-50{
+    width: 100% !important;
+  }
+    header .banner > div > h1{
+      font-size: 2em;
+    }
+  header .banner > div > p{
+    font-size: 0.9em;
+  }
+  header .btn-view{
+    font-size: 0.8rem;
+  }
+  .section-4 p, .section-5 p{
+    font-size: 14px;
+  }
+  .section-5 h4{
+    font-size: 22px;
+    word-spacing: 0px;
+  }
+  .section-5 h4 span{
+    font-size: 20px;
+  }
+  .section-6 h2{
+    font-size: 28px;
+  }
+  .section-6 p {
+    font-size: 13px;
+  }
+  .form-control{
+    font-size: 0.8rem;
+  }
+  .custom-btn {
+    width: 170px;
+  }
+  .btn-group-lg>.btn, .btn-lg{
+    font-size: 1rem;
+  }
+  footer p{
+    font-size: 0.8rem;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .section-1 > .container{
+    max-width: 90%;
+  }
+ }
+ @media (min-width: 992px) {
+   .section-2 p{
+       word-spacing: 2px;
+       font-size: 15px;
+   }
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
