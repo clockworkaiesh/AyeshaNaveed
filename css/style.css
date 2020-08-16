@@ -375,7 +375,10 @@ footer{
   overflow-x: hidden;
 }
 a.footer-link{
-  color: #c6cae9;
+  color: #c6cae9 !important;
+}
+a.footer-link:hover{
+  color: #fff !important;
 }
 /* --- FOOTER STYLES */
 
