@@ -381,8 +381,9 @@ a.footer-link:hover{
   color: #fff !important;
 }
 img.bb-top{
-  width: 60px;
+  width: 50px;
   float: right;
+  margin-top: -10px;
 }
 /* --- FOOTER STYLES */
 
