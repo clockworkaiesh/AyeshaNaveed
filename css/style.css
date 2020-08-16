@@ -380,6 +380,9 @@ a.footer-link{
 a.footer-link:hover{
   color: #fff !important;
 }
+img.bb-top{
+  width: 60px;
+}
 /* --- FOOTER STYLES */
 
 
